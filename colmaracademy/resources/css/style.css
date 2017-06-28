@@ -89,11 +89,12 @@ li{
 
 li a{
   text-decoration: none;
-  transition: background-color 0.5s linear 0.5s;
+  transition: background-color 0.1s linear 0.1s;
 }
 
 li a:hover{
   background-color: #E3E3E3;
+  text-decoration: underline;
 }
 
 
@@ -152,6 +153,7 @@ li a:hover{
   align-items: center;
   justify-content: center;
   display:flex;
+  transition:background-color 0.5s ease-in-out 0.5s;
 }
 
 .button h2{
@@ -161,11 +163,14 @@ li a:hover{
 .button a{
   text-decoration: none;
   color:white;
-  transition:color 1.5s ease-in-out 0.5s;
+  transition:color 0.5s ease-in-out 0.5s;
 }
 
+.button:hover{
+  background-color: #909090;
+}
 .button a:hover{
-  color:#F95959;
+  color:#414141;
 }
 
 
@@ -305,6 +310,12 @@ li a:hover{
   width:32%;
   background-color: white;
   margin-bottom: 1rem;
+  transition: background-color .2s ease-in-out .2s;
+}
+
+.single-class:hover{
+  background-color: #d3d3d3;
+  text-decoration: underline;
 }
 
 .single-class img{
@@ -416,7 +427,12 @@ video{
   justify-content: center;
   flex-direction: column;
   display:flex;
-  padding-left: 1rem;
+  padding-left: 2rem;
+
+}
+
+.exhibits .single-offer .content:hover{
+  text-decoration: underline;
 }
 
 
@@ -433,7 +449,8 @@ video{
 
 .image-offer img{
   display:flex;
-  width:75%;
+  width:100%;
+  height:auto;
 
 
 
